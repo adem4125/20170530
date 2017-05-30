@@ -1,0 +1,452 @@
+@charset "utf-8";
+/* CSS Document */
+.body {
+	font-family:'';
+	}
+
+.bk {
+	background:url(../img/bk-01.png);
+	padding-top:5%;
+	
+	}
+.bk p {
+	font-family:'微軟正黑體';
+	color:#fff;
+	padding-bottom:50px;
+	padding-top:20px;
+	margin:0px auto;
+	width:35%
+	
+	}
+	.bk2 {
+		background-attachment: fixed;
+		background-image:url(../img/bk-02.png);
+		height:400px;
+		}
+	.bk2 img {
+		width:100%;
+		}
+		.bk3 {
+			background-attachment: fixed;
+			background-image:url(../img/footer.png);
+			width:100%;
+			height:700px ;
+			}
+			.bk3 p {
+				font-family:'微軟正黑體';
+				font-size:1.7em;
+				padding-top:20%;
+				}
+.banner-top {
+	margin-top:0px;
+	}			
+.team-box {
+	
+	}
+	.team-box img {
+		display:none;
+		width:10%;
+		float:left;
+		}		
+.circle-home {
+	font-family:'微軟正黑體';
+	background:#FFF;
+	width:140px;
+	height:140px;
+	text-align:center;
+	margin:0px auto;
+	border-radius:100px;
+	padding-top:40px;
+	color:#E50011;
+	font-size:1.3em;
+	border:7px solid #ACACAC;
+	margin-top: 3%;
+
+	}
+.btn-box {
+	width:100%;
+	text-align:center;
+	
+	}
+.btn-box img {
+	width:300px;
+	height: auto;
+	}
+
+.pf-btn {
+	width: 50%;
+	height:auto;
+	position: relative;
+	text-align: center;
+	margin:0px auto;
+	padding-bottom: 5%;
+}
+
+.pn-btn {
+	width: 700px;
+	height:auto;
+	position: relative;
+	text-align: center;
+	margin:0px auto;
+	padding-bottom: 5%;
+}
+
+.pn-btn p {
+	color: #000;
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+	
+}
+
+.line {
+	width: 50%;
+	
+	height: auto;
+	margin: 0px auto;
+	font-family: '微軟正黑體';
+	font-size: 3em;
+	
+}
+
+.line::after {
+	position:absolute;
+	width: 45%;
+	height: 2px;
+	left:40% ;
+	top: 60px;
+	background-color:#F39700;
+	content: "";
+}
+.line::before {
+	position:absolute;
+	width: 12%;
+	height:85px;
+	border-radius: 1050px;
+	top:15px;
+	left:78% ;
+	background-color:#F39700;	
+	content: "";
+	
+}
+
+.en-title {
+	float: left;
+	margin-top:10px;
+	margin-left: 5%;
+	font-size: 2.2em;
+	background-color: #FFCACB;
+}
+
+.pf-btn img {
+	width: 50%;
+	border-radius: 15px;	
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	
+}
+
+.map img {
+	width: 100%;
+}
+
+.pf-panel {
+	background: #fff;
+	border-radius: 7px;
+}
+
+.pf-panel li {
+	width:20% ;
+	float: left;
+	text-align: center;
+	margin: 2%;
+	padding:0px;
+	list-style:none;
+
+
+}
+
+.pf-panel img {
+	width: 100%;	
+}
+
+.pf-panel p {
+	background: #fff;
+	width: 100%;
+	font-size: 1.2em;
+	color: #000;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 99;
+}
+
+.pf-btn .pf-tg {
+	width: 100%;
+	border-radius: 0px;	
+}
+
+.pf-tg-pink {
+	background: #EE858C;
+}
+
+.pf-tg-blue {
+	background: #54C2F1;
+}
+
+.pf-tg-green {
+	background: #85CBBF;
+}
+
+.pf-body h4 {
+	text-align: left;
+	font-family: '微軟正黑體';
+	padding: 6px;
+	font-size: 1.2em;
+}
+
+.pf-body p {
+	text-align: left;
+	margin: 0px;
+	width: 100%;
+}
+
+#parners {
+	top
+	width: 100%;
+	height: 70%;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+}
+
+.pn-top {
+	padding-top: 100px;
+	width: 100%;
+	height: 200px;
+	padding-top: 100px;
+}
+
+
+.modal-header .pf-clo {
+	font-size: 50px;
+	color: #fff;
+}
+
+.modal-header .pf-til {
+	font-family: '微軟正黑體';
+	float: left;
+	margin-left: 5%;
+	margin-top: 5%;
+	color: #fff;
+}
+
+.pf-pink h4 {
+	background: #E95364;
+	color: #F9C158;
+}
+
+.pf-blue h4 {
+	background: #0092CD;
+	color: #fff;
+}
+
+.pf-green h4 {
+	background: #42A988;
+	color: #fff;
+}
+
+img.pink.button {
+  -webkit-animation-name: pinkPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pinkPulse {
+  from { background-color: #EE858C; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #ED5F6D; -webkit-box-shadow: 0 0 18px #EE858C; }
+  to { background-color: #EE858C; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+img.blue.button {
+  -webkit-animation-name: bluePulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bluePulse {
+  from { background-color: #00A0D8; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #00CFFF; -webkit-box-shadow: 0 0 18px #00A0D8; }
+  to { background-color: #00A0D8; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+img.green.button {
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes greenPulse {
+  from { background-color: #23b599; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #31dbb3; -webkit-box-shadow: 0 0 18px #23b599; }
+  to { background-color: #23b599; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+.slides ul {
+	margin:0px;
+	}	
+.slides li {
+	margin:0px;
+	width:240px;
+	list-style:none;
+	float:left;
+	}
+
+.team-box img:hover {
+	
+	box-shadow:1px 1px 10px 5px #000;
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	transition:all 0.3s ease ;
+	-webkit-transition:all 0.3s ease ;
+	-ms-transition:all 0.3s ease;
+	z-index:999; 
+	}
+
+
+@media (max-width: 768px) {
+	.banner-top {
+	margin-top:0px;
+}
+
+.mb-xs a {
+	color: #fff;
+}
+
+.pf-btn {
+	padding-top: 20%;
+}
+
+.pf-btn img {
+	width: 100%;
+	border-radius: 15px;	
+	text-align: center;
+	margin-top: 7%;
+	margin-bottom: 10%;
+}
+
+.pf-panel {
+		width: 180%;
+        margin-left: -40%;
+        padding: 0px;
+	}
+
+.pf-panel li {
+	width:25%;
+	float: left;
+	text-align: center;
+	margin-left: 4%;
+	padding:0px;
+	list-style:none;
+}
+
+ .pf-panel p {
+	font-size: 1em;
+	width: 100%;
+	color: #000;
+	padding-top:0px;
+	padding-bottom: 0px;
+    }
+
+.pn-btn {
+	width: 100%;
+	height:auto;
+	position: relative;
+	text-align: center;
+	margin:0px auto;
+	padding-bottom: 5%;
+}	
+	
+.line {
+	width: 50%;
+	height: auto;
+	margin: 0px auto;
+	font-family: '微軟正黑體';
+	font-size: 2.5em;	
+}
+	
+.line::after {
+	position:absolute;
+	width: 45%;
+	height: 2px;
+	left:40% ;
+	top: 60px;
+	background-color:#fff;
+	content: "";
+}
+.line::before {
+	position:absolute;
+	width: 12%;
+	height:85px;
+	border-radius: 1050px;
+	top:15px;
+	left:78% ;
+	background-color:#fff;	
+	content: "";
+	
+}
+	
+#parners {
+	width: 100%;
+	height: 70%;
+	background-color: #FFFFFF;
+	text-align: center;	
+}
+
+.pn-w {
+width: 250px;	
+}	
+	
+}
+
+
+	
+@media (max-width: 425px) {
+
+	.pf-btn .pic {
+		margin-left: -25%;
+        width: 150%;
+    }
+
+	.pf-panel {
+		width: 180%;
+        margin-left: -40%;
+        padding: 0px;
+	}
+
+	.pf-panel ul {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.pf-panel li {
+	width:45%;
+	float: left;
+	text-align: center;
+	margin-left:2.5%;
+	margin-top: 1%;
+	padding:0px;
+	list-style:none;
+}
+
+    .pf-panel p {
+	font-size: 12px;
+	width: 100%;
+	color: #000;
+	padding-top:0px;
+	padding-bottom: 0px;
+    }
+
+
+}
