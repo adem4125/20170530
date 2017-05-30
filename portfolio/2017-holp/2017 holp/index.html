@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>希望30環島健走</title>
+     <link rel="stylesheet" type="text/css" href="flexslider.css" />
+     <script src="http://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+     <script src="http://code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+     <!--WOW 滾動-->
+     
+    <!--BS and slide-->
+     
+     <script src="jquery.flexslider.js"></script>
+	 <script src="app2.js"></script> 
+     <script src="js/bootstrap.min.js"></script>
+     
+     <!----other---->
+     <script src="scripts/imagesloaded.pkgd.min.js"></script>
+	 <script src="scripts/hammer.min.js"></script>
+	 <script src="scripts/sequence.js"></script>
+	 <script src="scripts/sequence-theme.modern-slide-in.js"></script>
+	 <script src="jquery.flexslider.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    
+    
+   
+
+    
+  </head>
+  <body>
+  
+<nav class="navbar navbar-default navbar-fixed-top navback" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/index">
+        <img alt="Brand" src="img/brand.png" data-toggle="tooltip" data-placement="top" title="Home">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#/index" class="menu-btn"><img src="img/top nav/nav-05.png">首頁</a></li>
+        <li><a href="#/main" class="menu-btn"><img src="img/top nav/nav-01.png">活動緣起</a></li>
+        <li><a href="#/main-2" class="menu-btn"><img src="img/top nav/nav-02.png">健走活動</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/page-1" class="menu-btn"><img src="img/top nav/nav-03.png">環島行程</a></li>
+        <li><a href="#/page-2" class="menu-btn"><img src="img/top nav/nav-04.png">健走裝備</a></li>     
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div ng-view></div>
+ <div class="all-content">	
+	<div class="row banner-top">
+ <img src="img/banner.png" class="img-responsive " alt="Responsive image"> 
+
+</div>
+
+<div class="bk3">
+    <p class="text-center">2016，希望基金會成立30週年<br/>
+我們由聖約翰大學出發，走了30公里到法鼓山<br/> 
+MRT，以30為出發點<br/>
+MRT，March Round Taiwan
+</p> 
+    
+  </div>
+
+<div class="row hidden-xs">
+
+ 
+</div>
+
+  <div class="btn-box wow bounceInDown"> 
+  <img src="img/30-logo.png" class="btn-home" alt="Responsive image">
+    
+  </div>
+
+ <div class="btn-box-2" > 
+  <img src="img/footer-01.png" class="btn-home" alt="Responsive image">
+</div>
+
+</div>								
+  </body>
+  
+ <!---------roll------->  
+
+<script type="text/javascript">
+
+window.onscroll = function () {
+           var t = document.documentElement.scrollTop || document.body.scrollTop;
+           var $ofweidht=innerWidth;
+           if (t > 0 && $ofweidht>=768) {
+               $(".navbar-right").stop().animate({"margin-left": "4%"});
+               $(".navbar-left").stop().animate({"margin-right": "4%"});
+               $(".navback").css('background-color', '#FEFEFE');
+			   $(".navbar-brand").stop().animate({opacity: 1}, 300);
+			   
+			   
+
+           } else {
+
+               $(".navbar-right").stop().animate({"margin-left": "0%"});
+               $(".navbar-left").stop().animate({"margin-right": "0%"});             
+               $(".navback").css('background-color','');
+			   $(".navbar-brand").stop().animate({opacity: 0}, 300);
+			   
+           }
+       }
+          
+
+ </script>
+ <script>
+  $(function() {
+    var $ofweidht=innerWidth;
+  if($ofweidht<=768){
+	  $(".mobile").show(); 
+  }else{;
+    $(".mobile").hide();
+    }    
+      });
+	 
+$(window).load(function() {
+  $(".img-responsive").fadeIn(2000);
+});
+
+$(".menu-btn").click(function(){
+  $(".all-content").hide();
+});
+
+$(".menu-show").click(function(){
+  $(".all-content").show();
+});	 
+</script>	 
+
+ <!---------fadein------->  
+<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+  new WOW().init();
+};
+</script>    
+
+
+
+</html>
